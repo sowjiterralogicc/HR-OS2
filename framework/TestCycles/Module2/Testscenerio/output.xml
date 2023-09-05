@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.9 on win32)" generated="20230904 15:02:18.453" rpa="false" schemaversion="3">
+<suite id="s1" name="Testcase1" source="C:\Users\Thippeswamy U-3061\PycharmProjects\Robot_Framework\framework\TestCycles\Module2\Testscenerio\testcase1.robot">
+<test id="s1-t1" name="Fill the Registration fields with relavant data" line="6">
+<kw name="Launch the registration form webpage" library="guru99_registrationPO">
+<kw name="Lanuch Browser" library="common_keywords">
+<arg>${guru99_registation_portal}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230904 15:02:18.635" level="INFO">Opening browser 'firefox' to base url 'https://demo.guru99.com/test/newtours/register.php'.</msg>
+<msg timestamp="20230904 15:02:18.635" level="INFO">Firefox driver log is always forced to to: C:\Users\Thippeswamy U-3061\PycharmProjects\Robot_Framework\framework\TestCycles\Module2\Testscenerio\geckodriver-1.log</msg>
+<status status="PASS" starttime="20230904 15:02:18.635" endtime="20230904 15:02:27.747"/>
+</kw>
+<status status="PASS" starttime="20230904 15:02:18.634" endtime="20230904 15:02:27.747"/>
+</kw>
+<status status="PASS" starttime="20230904 15:02:18.634" endtime="20230904 15:02:27.748"/>
+</kw>
+<status status="PASS" starttime="20230904 15:02:18.634" endtime="20230904 15:02:27.749"/>
+</test>
+<status status="PASS" starttime="20230904 15:02:18.454" endtime="20230904 15:02:27.752"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase1">Testcase1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
