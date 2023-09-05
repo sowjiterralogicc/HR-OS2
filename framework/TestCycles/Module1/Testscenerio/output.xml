@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.9 on win32)" generated="20230905 14:59:44.582" rpa="false" schemaversion="3">
+<suite id="s1" name="Testcase2" source="C:\Users\Thippeswamy U-3061\PycharmProjects\Robot_Framework\framework\TestCycles\Module1\Testscenerio\testcase2.robot">
+<test id="s1-t1" name="Validate Orange Hrm Login page with Valid credentials" line="5">
+<kw name="Launch_Guru99_Login_page" library="guru99_login">
+<kw name="Lanuch Browser" library="common_keywords">
+<arg>${guru99_portal}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230905 14:59:44.851" level="INFO">Opening browser 'firefox' to base url 'https://demo.guru99.com/test/newtours/login.php'.</msg>
+<msg timestamp="20230905 14:59:44.851" level="INFO">Firefox driver log is always forced to to: C:\Users\Thippeswamy U-3061\PycharmProjects\Robot_Framework\framework\TestCycles\Module1\Testscenerio\geckodriver-2.log</msg>
+<status status="PASS" starttime="20230905 14:59:44.851" endtime="20230905 14:59:53.644"/>
+</kw>
+<status status="PASS" starttime="20230905 14:59:44.851" endtime="20230905 14:59:53.644"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230905 14:59:53.645" endtime="20230905 14:59:53.648"/>
+</kw>
+<status status="PASS" starttime="20230905 14:59:44.851" endtime="20230905 14:59:53.649"/>
+</kw>
+<kw name="Pass the vaild credential for login page" library="guru99_login">
+<kw name="Pass credentials for login" library="common_keywords">
+<arg>${usrname_xpath}</arg>
+<arg>${password_xpath}</arg>
+<arg>${valid_username}</arg>
+<arg>${valid_password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${user_xpath}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 14:59:53.652" level="INFO">Typing text 'thippeswamy' into text field 'xpath://form[@name='register']/table//descendant::input[@name='userName']'.</msg>
+<status status="PASS" starttime="20230905 14:59:53.650" endtime="20230905 14:59:53.716"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${pass_xpath}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 14:59:53.718" level="INFO">Typing text '12345678' into text field 'xpath://form[@name='register']/table//descendant::input[@name='password']'.</msg>
+<status status="PASS" starttime="20230905 14:59:53.716" endtime="20230905 14:59:53.750"/>
+</kw>
+<status status="PASS" starttime="20230905 14:59:53.649" endtime="20230905 14:59:53.750"/>
+</kw>
+<status status="PASS" starttime="20230905 14:59:53.649" endtime="20230905 14:59:53.750"/>
+</kw>
+<kw name="Click On Login Button" library="guru99_login">
+<kw name="Click On Button" library="common_keywords">
+<arg>${login_button_xpath}</arg>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Button_xpath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230905 14:59:53.753" level="INFO">Clicking button 'xpath://form[@name='register']/table//descendant::input[@name='submit']'.</msg>
+<status status="PASS" starttime="20230905 14:59:53.752" endtime="20230905 14:59:55.070"/>
+</kw>
+<status status="PASS" starttime="20230905 14:59:53.751" endtime="20230905 14:59:55.071"/>
+</kw>
+<status status="PASS" starttime="20230905 14:59:53.750" endtime="20230905 14:59:55.071"/>
+</kw>
+<kw name="Verify Login page Navigate to HomePage" library="guru99_login">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Login_successful_msg_xpath}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230905 14:59:55.072" endtime="20230905 14:59:55.080"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${word}</var>
+<arg>${Login_successful_msg_xpath}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230905 14:59:55.101" level="INFO">${word} = Login Successfully</msg>
+<status status="PASS" starttime="20230905 14:59:55.080" endtime="20230905 14:59:55.102"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>"${word}" != "Login Successfully"</arg>
+<arg>Log</arg>
+<arg>It's not navigated to the home page</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20230905 14:59:55.102" endtime="20230905 14:59:55.103"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230905 14:59:55.103" endtime="20230905 14:59:56.355"/>
+</kw>
+<status status="PASS" starttime="20230905 14:59:55.071" endtime="20230905 14:59:56.355"/>
+</kw>
+<status status="PASS" starttime="20230905 14:59:44.851" endtime="20230905 14:59:56.355"/>
+</test>
+<status status="PASS" starttime="20230905 14:59:44.587" endtime="20230905 14:59:56.362"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase2">Testcase2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

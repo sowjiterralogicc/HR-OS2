@@ -1,0 +1,21 @@
+1693906198197	geckodriver	INFO	Listening on 127.0.0.1:56771
+1693906201232	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\THIPPE~1\\AppData\\Local\\Temp\\rust_mozprofile3woHvx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693906201602	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693906201854	Marionette	INFO	Listening on port 56781
+Read port: 56781
+1693906202030	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zbsophEl4vgXz8qX3EWcY8Q67iIQ7bFnjGnqUyxIR6M.js line 2 > eval line 1690 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.guru99.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.guru99.com."
+JavaScript warning: https://gumi.criteo.com/syncframe?origin=publishertagids&topUrl=demo.guru99.com#{%22uid%22:{%22origin%22:0},%22lwid%22:{%22origin%22:0},%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22sid%22:{%22origin%22:0},%22tld%22:%22guru99.com%22,%22topUrl%22:%22demo.guru99.com%22,%22version%22:141,%22cw%22:true,%22lsw%22:true,%22origin%22:%22publishertagids%22,%22requestId%22:%220.07412626247613474%22}, line 14: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gumi.criteo.com/syncframe?origin=publishertagids&topUrl=demo.guru99.com#{%22uid%22:{%22origin%22:0},%22lwid%22:{%22origin%22:0},%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22sid%22:{%22origin%22:0},%22tld%22:%22guru99.com%22,%22topUrl%22:%22demo.guru99.com%22,%22version%22:141,%22cw%22:true,%22lsw%22:true,%22origin%22:%22publishertagids%22,%22requestId%22:%220.07412626247613474%22}:14:3137
+r/<@https://gumi.criteo.com/syncframe?origin=publishertagids&topUrl=demo.guru99.com#{%22uid%22:{%22origin%22:0},%22lwid%22:{%22origin%22:0},%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22sid%22:{%22origin%22:0},%22tld%22:%22guru99.com%22,%22topUrl%22:%22demo.guru99.com%22,%22version%22:141,%22cw%22:true,%22lsw%22:true,%22origin%22:%22publishertagids%22,%22requestId%22:%220.07412626247613474%22}:14:3642
+
+1693906207611	Marionette	INFO	Stopped listening on port 56781
+JavaScript warning: https://fdyn.pubwise.io/script/b7da2361-4ada-4374-9097-af748311b5fe/v3/dyn/pws.js, line 1226: Script terminated by timeout at:
+onError@https://fdyn.pubwise.io/script/b7da2361-4ada-4374-9097-af748311b5fe/v3/dyn/pws.js:1226:1955
+
+Dynamically enable window occlusion 1
