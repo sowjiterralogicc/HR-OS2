@@ -7,15 +7,16 @@ Resource          ../Variables/Hr_login_variables.robot
 Click on terralogic_login
 
     Click Element    ${terralogic_login}
-    Sleep    4s
+    Sleep    10s
 
 Login to Gmail
-    [Arguments]    ${username}    ${password}    ${user_xpath}    ${pass_xpath}
-    Input Text    ${user_xpath}    ${username}
+    [Arguments]    ${username}      ${password}      ${user_xpath}      ${pass_xpath}
+
+    Input Text    ${user_xpath}     ${username}
     Sleep    5s
     Click Button    ${Next}
     Sleep    30s
-    Input Text    ${pass_xpath}    ${password}
+    Input Text    ${pass_xpath}     ${password}
     Sleep    5s
     Click Button    ${Next}
     sleep   30s

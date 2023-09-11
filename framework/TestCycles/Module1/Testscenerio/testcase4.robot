@@ -5,8 +5,6 @@ Resource    ../../../Resources/Keywords/Hr_login_keywords.robot
 Resource    ../../../Resources/PageObjects/Hr_login_po.robot
 Resource    ../../../Resources/Keywords/Hr_top_menu_keywords.robot
 
-
-
 *** Test Cases ***
 Login Into Hros And Check The Top Menu Functionalities
     Open Terralogic Website    # Open the Terralogic website
