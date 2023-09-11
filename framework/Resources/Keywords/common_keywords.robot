@@ -5,7 +5,7 @@ Library    SeleniumLibrary
 *** Keywords ***
 Lanuch Browser
     [Arguments]    ${url}
-    Open Browser    ${url}        firefox
+    Open Browser    ${url}        Chrome
 Close All Windows
     Close All Browsers
 Pass credentials for login
@@ -19,5 +19,6 @@ Click On Button
 Select One Value From Drop Down List
      [Arguments]    ${attribute}    ${attrib_value}         ${text}
      Select From List by Value    ${attribute}=${attrib_value}    ${text}
+
 
 

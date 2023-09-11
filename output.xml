@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.9 on win32)" generated="20230910 20:52:28.834" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Framework" source="C:\Users\Thippeswamy U-3061\PycharmProjects\Robot_Framework">
+<suite id="s1-s1" name="Framework" source="C:\Users\Thippeswamy U-3061\PycharmProjects\Robot_Framework\framework">
+<suite id="s1-s1-s1" name="TestCycles" source="C:\Users\Thippeswamy U-3061\PycharmProjects\Robot_Framework\framework\TestCycles">
+<suite id="s1-s1-s1-s1" name="Module1" source="C:\Users\Thippeswamy U-3061\PycharmProjects\Robot_Framework\framework\TestCycles\Module1">
+<suite id="s1-s1-s1-s1-s1" name="Testscenerio" source="C:\Users\Thippeswamy U-3061\PycharmProjects\Robot_Framework\framework\TestCycles\Module1\Testscenerio">
+<suite id="s1-s1-s1-s1-s1-s1" name="Testcase44" source="C:\Users\Thippeswamy U-3061\PycharmProjects\Robot_Framework\framework\TestCycles\Module1\Testscenerio\testcase44.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Delete Time Sheet On Daily" line="9">
+<kw name="Open Terralogic Website" library="Hr_login_po">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${BaseURL}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230910 20:52:29.085" level="INFO">Opening browser 'firefox' to base url 'https://terralogic.paxanimi.ai/login'.</msg>
+<msg timestamp="20230910 20:52:29.085" level="INFO">Firefox driver log is always forced to to: C:\Users\Thippeswamy U-3061\PycharmProjects\Robot_Framework\geckodriver-163.log</msg>
+<status status="PASS" starttime="20230910 20:52:29.085" endtime="20230910 20:52:47.473"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230910 20:52:47.476" endtime="20230910 20:52:47.477"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230910 20:52:47.481" endtime="20230910 20:52:47.486"/>
+</kw>
+<status status="PASS" starttime="20230910 20:52:29.085" endtime="20230910 20:52:47.486"/>
+</kw>
+<kw name="Click on terralogic_login" library="Hr_login_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${terralogic_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230910 20:52:47.491" level="INFO">Clicking element 'xpath://button[@class='ant-btn ant-btn-round ant-btn-default ant-btn-lg MyButton__outline']'.</msg>
+<status status="PASS" starttime="20230910 20:52:47.486" endtime="20230910 20:52:49.516"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:52:53.520" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230910 20:52:49.516" endtime="20230910 20:52:53.520"/>
+</kw>
+<status status="PASS" starttime="20230910 20:52:47.486" endtime="20230910 20:52:53.521"/>
+</kw>
+<kw name="Switch to window" library="Hr_login_keywords">
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230910 20:52:53.529" level="INFO">${handles} = ['ec81b3f5-8c5d-4900-8d76-4a42927d331e', 'b5e642d8-c5cb-4069-a52f-aaff14296b27']</msg>
+<status status="PASS" starttime="20230910 20:52:53.522" endtime="20230910 20:52:53.529"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230910 20:52:53.529" endtime="20230910 20:52:53.632"/>
+</kw>
+<status status="PASS" starttime="20230910 20:52:53.522" endtime="20230910 20:52:53.632"/>
+</kw>
+<kw name="Login to Gmail" library="Hr_login_keywords">
+<arg>${Username}</arg>
+<arg>${Password}</arg>
+<arg>${Hros_user_xpath}</arg>
+<arg>${Hros_pass_xpath}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${user_xpath}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230910 20:52:53.636" level="INFO">Typing text 'uppara.thippeswamy@terralogic.com' into text field 'xpath://input[@id='identifierId']'.</msg>
+<status status="PASS" starttime="20230910 20:52:53.636" endtime="20230910 20:52:53.747"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:52:58.754" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230910 20:52:53.747" endtime="20230910 20:52:58.754"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Next}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230910 20:52:58.754" level="INFO">Clicking button 'xpath://span[text()='Next']//parent::button'.</msg>
+<status status="PASS" starttime="20230910 20:52:58.754" endtime="20230910 20:52:59.053"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:53:29.056" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20230910 20:52:59.053" endtime="20230910 20:53:29.056"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${pass_xpath}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230910 20:53:29.058" level="INFO">Typing text 'Thippeswamy@0224' into text field 'xpath://input[@name='Passwd']'.</msg>
+<status status="PASS" starttime="20230910 20:53:29.056" endtime="20230910 20:53:29.126"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:53:34.135" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230910 20:53:29.126" endtime="20230910 20:53:34.135"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Next}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230910 20:53:34.135" level="INFO">Clicking button 'xpath://span[text()='Next']//parent::button'.</msg>
+<status status="PASS" starttime="20230910 20:53:34.135" endtime="20230910 20:53:34.435"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:54:04.443" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20230910 20:53:34.436" endtime="20230910 20:54:04.444"/>
+</kw>
+<status status="PASS" starttime="20230910 20:52:53.632" endtime="20230910 20:54:04.444"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:54:09.446" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230910 20:54:04.445" endtime="20230910 20:54:09.446"/>
+</kw>
+<kw name="Switch Back To Main Window" library="Hr_login_keywords">
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230910 20:54:09.454" level="INFO">${handles} = ['ec81b3f5-8c5d-4900-8d76-4a42927d331e']</msg>
+<status status="PASS" starttime="20230910 20:54:09.448" endtime="20230910 20:54:09.454"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230910 20:54:09.456" endtime="20230910 20:54:09.471"/>
+</kw>
+<status status="PASS" starttime="20230910 20:54:09.448" endtime="20230910 20:54:09.473"/>
+</kw>
+<kw name="Click On TimeSheet Menu" library="Hr_delete_time_sheet_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${timesheet}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230910 20:54:09.473" endtime="20230910 20:54:09.492"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${timesheet}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230910 20:54:09.494" level="INFO">Clicking element '//a[@href='/time-sheet']'.</msg>
+<status status="PASS" starttime="20230910 20:54:09.492" endtime="20230910 20:54:09.793"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:54:14.800" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230910 20:54:09.793" endtime="20230910 20:54:14.800"/>
+</kw>
+<status status="PASS" starttime="20230910 20:54:09.473" endtime="20230910 20:54:14.800"/>
+</kw>
+<kw name="Mouse Over TO Task Header" library="Hr_delete_time_sheet_keywords">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Task_Header_xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230910 20:54:14.804" level="INFO">Simulating Mouse Over on element 'xpath://div[@class='ant-row']/div[4]'.</msg>
+<status status="PASS" starttime="20230910 20:54:14.802" endtime="20230910 20:54:15.096"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:54:25.098" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230910 20:54:15.096" endtime="20230910 20:54:25.099"/>
+</kw>
+<status status="PASS" starttime="20230910 20:54:14.802" endtime="20230910 20:54:25.099"/>
+</kw>
+<kw name="Click Element if Visible" library="Hr_delete_time_sheet_keywords">
+<for flavor="IN">
+<var>${i}</var>
+<value>RANGE</value>
+<value>1</value>
+<value>To</value>
+<value>5</value>
+<iter>
+<var name="${i}">RANGE</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element1}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${edit_sheet_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${edit_sheet_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230910 20:54:35.216" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-335.png"&gt;&lt;img src="selenium-screenshot-335.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230910 20:54:35.216" level="FAIL">Element with locator 'xpath://div[@class='actionsButton___12SV-']/img[1]' not found.</msg>
+<status status="FAIL" starttime="20230910 20:54:25.102" endtime="20230910 20:54:35.216"/>
+</kw>
+<msg timestamp="20230910 20:54:35.216" level="INFO">${element1} = False</msg>
+<status status="PASS" starttime="20230910 20:54:25.100" endtime="20230910 20:54:35.216"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230910 20:54:35.216" endtime="20230910 20:54:35.216"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230910 20:54:35.228" level="INFO">Element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]' is displayed.</msg>
+<status status="PASS" starttime="20230910 20:54:35.216" endtime="20230910 20:54:35.228"/>
+</kw>
+<msg timestamp="20230910 20:54:35.228" level="INFO">${element2} = True</msg>
+<status status="PASS" starttime="20230910 20:54:35.216" endtime="20230910 20:54:35.228"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:54:37.248" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230910 20:54:35.228" endtime="20230910 20:54:37.249"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230910 20:54:37.249" endtime="20230910 20:54:37.249"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${element1}'=='True'</arg>
+<arg>Delete Daily Time Sheet</arg>
+<arg>ELSE</arg>
+<arg>Click Button</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230910 20:54:37.249" level="INFO">Clicking button 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]'.</msg>
+<status status="PASS" starttime="20230910 20:54:37.249" endtime="20230910 20:54:37.502"/>
+</kw>
+<status status="PASS" starttime="20230910 20:54:37.249" endtime="20230910 20:54:37.502"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:54:40.512" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230910 20:54:37.502" endtime="20230910 20:54:40.512"/>
+</kw>
+<status status="PASS" starttime="20230910 20:54:25.100" endtime="20230910 20:54:40.512"/>
+</iter>
+<iter>
+<var name="${i}">1</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element1}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${edit_sheet_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${edit_sheet_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230910 20:54:40.528" level="INFO">Element 'xpath://div[@class='actionsButton___12SV-']/img[1]' is displayed.</msg>
+<status status="PASS" starttime="20230910 20:54:40.512" endtime="20230910 20:54:40.528"/>
+</kw>
+<msg timestamp="20230910 20:54:40.528" level="INFO">${element1} = True</msg>
+<status status="PASS" starttime="20230910 20:54:40.512" endtime="20230910 20:54:40.528"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230910 20:54:40.528" endtime="20230910 20:54:40.528"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230910 20:54:40.544" level="INFO">Element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]' is displayed.</msg>
+<status status="PASS" starttime="20230910 20:54:40.528" endtime="20230910 20:54:40.544"/>
+</kw>
+<msg timestamp="20230910 20:54:40.544" level="INFO">${element2} = True</msg>
+<status status="PASS" starttime="20230910 20:54:40.528" endtime="20230910 20:54:40.544"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:54:42.545" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230910 20:54:40.544" endtime="20230910 20:54:42.545"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230910 20:54:42.545" endtime="20230910 20:54:42.545"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${element1}'=='True'</arg>
+<arg>Delete Daily Time Sheet</arg>
+<arg>ELSE</arg>
+<arg>Click Button</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Delete Daily Time Sheet" library="Hr_delete_time_sheet_keywords">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${edit_elemets}</var>
+<arg>${delete_sheet_xpath}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230910 20:54:42.556" level="INFO">${edit_elemets} = [&lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="41990331-cc1f-4383-bc7f-98d51c6777e9", element="27533725-71db-41dc-b24e-7adfd7dbbd79")&gt;, &lt;selenium.webdriver.firefox.webelement.Fire...</msg>
+<status status="PASS" starttime="20230910 20:54:42.545" endtime="20230910 20:54:42.556"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${num_elements}</var>
+<arg>${edit_elemets}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20230910 20:54:42.556" level="INFO">Length is 2</msg>
+<msg timestamp="20230910 20:54:42.556" level="INFO">${num_elements} = 2</msg>
+<status status="PASS" starttime="20230910 20:54:42.556" endtime="20230910 20:54:42.556"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>thipe ${num_elements}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230910 20:54:42.556" endtime="20230910 20:54:42.556"/>
+</kw>
+<if>
+<branch type="IF" condition="'${num_elements}' == '1'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Thippeswammy</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230910 20:54:42.556" endtime="20230910 20:54:42.556"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>${delete_sheet_xpath}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230910 20:54:42.556" endtime="20230910 20:54:42.556"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" starttime="20230910 20:54:42.556" endtime="20230910 20:54:42.556"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230910 20:54:42.556" endtime="20230910 20:54:42.556"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230910 20:54:42.556" endtime="20230910 20:54:42.556"/>
+</kw>
+<status status="NOT RUN" starttime="20230910 20:54:42.556" endtime="20230910 20:54:42.561"/>
+</branch>
+<status status="PASS" starttime="20230910 20:54:42.556" endtime="20230910 20:54:42.561"/>
+</if>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:54:47.565" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230910 20:54:42.562" endtime="20230910 20:54:47.565"/>
+</kw>
+<if>
+<branch type="IF" condition="'${num_elements}' != '1'">
+<for flavor="IN ENUMERATE">
+<var>${index}</var>
+<var>${element}</var>
+<value>@{edit_elemets}</value>
+<iter>
+<var name="${index}">0</var>
+<var name="${element}">&lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="41990331-cc1f-4383-bc7f-98d51c6777e9", element="27533725-71db-41dc-b24e-7adfd7dbbd79")&gt;</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${is_clickable}</var>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230910 20:54:47.565" level="INFO">Clicking element '&lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="41990331-cc1f-4383-bc7f-98d51c6777e9", element="27533725-71db-41dc-b24e-7adfd7dbbd79")&gt;'.</msg>
+<msg timestamp="20230910 20:54:47.659" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-336.png"&gt;&lt;img src="selenium-screenshot-336.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230910 20:54:47.659" level="FAIL">ElementClickInterceptedException: Message: Element &lt;img src="/static/ic_delete.10ddaf87.svg"&gt; is not clickable at point (1200,330) because another element &lt;img src="/static/ic_delete.10ddaf87.svg"&gt; obscures it
+</msg>
+<status status="FAIL" starttime="20230910 20:54:47.565" endtime="20230910 20:54:47.659"/>
+</kw>
+<msg timestamp="20230910 20:54:47.659" level="INFO">${is_clickable} = ('FAIL', 'ElementClickInterceptedException: Message: Element &lt;img src="/static/ic_delete.10ddaf87.svg"&gt; is not clickable at point (1200,330) because another element &lt;img src="/static/ic_delete.10ddaf8...</msg>
+<status status="PASS" starttime="20230910 20:54:47.565" endtime="20230910 20:54:47.659"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:54:49.667" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230910 20:54:47.659" endtime="20230910 20:54:49.667"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230910 20:54:49.667" level="INFO">Clicking button 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]'.</msg>
+<msg timestamp="20230910 20:55:09.762" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-337.png"&gt;&lt;img src="selenium-screenshot-337.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230910 20:55:09.762" level="FAIL">Button with locator 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]' not found.</msg>
+<status status="FAIL" starttime="20230910 20:54:49.667" endtime="20230910 20:55:09.762"/>
+</kw>
+<msg timestamp="20230910 20:55:09.762" level="INFO">${Delete_button} = ('FAIL', "Button with locator 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]' not found.")</msg>
+<status status="PASS" starttime="20230910 20:54:49.667" endtime="20230910 20:55:09.762"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:55:14.768" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230910 20:55:09.762" endtime="20230910 20:55:14.768"/>
+</kw>
+<status status="PASS" starttime="20230910 20:54:47.565" endtime="20230910 20:55:14.768"/>
+</iter>
+<iter>
+<var name="${index}">1</var>
+<var name="${element}">&lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="41990331-cc1f-4383-bc7f-98d51c6777e9", element="889a4252-c4d3-442f-966c-8ad9ef9003cf")&gt;</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${is_clickable}</var>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230910 20:55:14.768" level="INFO">Clicking element '&lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="41990331-cc1f-4383-bc7f-98d51c6777e9", element="889a4252-c4d3-442f-966c-8ad9ef9003cf")&gt;'.</msg>
+<status status="PASS" starttime="20230910 20:55:14.768" endtime="20230910 20:55:15.036"/>
+</kw>
+<msg timestamp="20230910 20:55:15.036" level="INFO">${is_clickable} = ('PASS', None)</msg>
+<status status="PASS" starttime="20230910 20:55:14.768" endtime="20230910 20:55:15.036"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:55:17.045" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230910 20:55:15.036" endtime="20230910 20:55:17.045"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230910 20:55:17.045" level="INFO">Clicking button 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]'.</msg>
+<status status="PASS" starttime="20230910 20:55:17.045" endtime="20230910 20:55:17.315"/>
+</kw>
+<msg timestamp="20230910 20:55:17.315" level="INFO">${Delete_button} = ('PASS', None)</msg>
+<status status="PASS" starttime="20230910 20:55:17.045" endtime="20230910 20:55:17.315"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:55:22.323" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230910 20:55:17.315" endtime="20230910 20:55:22.323"/>
+</kw>
+<status status="PASS" starttime="20230910 20:55:14.768" endtime="20230910 20:55:22.324"/>
+</iter>
+<status status="PASS" starttime="20230910 20:54:47.565" endtime="20230910 20:55:22.324"/>
+</for>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230910 20:55:22.324" level="INFO">Clicking element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]'.</msg>
+<status status="PASS" starttime="20230910 20:55:22.324" endtime="20230910 20:55:22.561"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:55:27.575" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230910 20:55:22.561" endtime="20230910 20:55:27.575"/>
+</kw>
+<status status="PASS" starttime="20230910 20:54:47.565" endtime="20230910 20:55:27.575"/>
+</branch>
+<status status="PASS" starttime="20230910 20:54:47.565" endtime="20230910 20:55:27.575"/>
+</if>
+<status status="PASS" starttime="20230910 20:54:42.545" endtime="20230910 20:55:27.575"/>
+</kw>
+<status status="PASS" starttime="20230910 20:54:42.545" endtime="20230910 20:55:27.575"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:55:30.587" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230910 20:55:27.575" endtime="20230910 20:55:30.587"/>
+</kw>
+<status status="PASS" starttime="20230910 20:54:40.512" endtime="20230910 20:55:30.587"/>
+</iter>
+<iter>
+<var name="${i}">To</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element1}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${edit_sheet_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${edit_sheet_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230910 20:55:40.687" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-338.png"&gt;&lt;img src="selenium-screenshot-338.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230910 20:55:40.687" level="FAIL">Element with locator 'xpath://div[@class='actionsButton___12SV-']/img[1]' not found.</msg>
+<status status="FAIL" starttime="20230910 20:55:30.587" endtime="20230910 20:55:40.687"/>
+</kw>
+<msg timestamp="20230910 20:55:40.687" level="INFO">${element1} = False</msg>
+<status status="PASS" starttime="20230910 20:55:30.587" endtime="20230910 20:55:40.687"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230910 20:55:40.687" endtime="20230910 20:55:40.687"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230910 20:55:40.703" level="INFO">Element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]' is displayed.</msg>
+<status status="PASS" starttime="20230910 20:55:40.687" endtime="20230910 20:55:40.703"/>
+</kw>
+<msg timestamp="20230910 20:55:40.703" level="INFO">${element2} = True</msg>
+<status status="PASS" starttime="20230910 20:55:40.687" endtime="20230910 20:55:40.703"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:55:42.710" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230910 20:55:40.703" endtime="20230910 20:55:42.710"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230910 20:55:42.710" endtime="20230910 20:55:42.710"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${element1}'=='True'</arg>
+<arg>Delete Daily Time Sheet</arg>
+<arg>ELSE</arg>
+<arg>Click Button</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230910 20:55:42.710" level="INFO">Clicking button 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]'.</msg>
+<status status="PASS" starttime="20230910 20:55:42.710" endtime="20230910 20:55:42.948"/>
+</kw>
+<status status="PASS" starttime="20230910 20:55:42.710" endtime="20230910 20:55:42.948"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:55:45.955" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230910 20:55:42.948" endtime="20230910 20:55:45.955"/>
+</kw>
+<status status="PASS" starttime="20230910 20:55:30.587" endtime="20230910 20:55:45.955"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element1}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${edit_sheet_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${edit_sheet_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230910 20:55:45.975" level="INFO">Element 'xpath://div[@class='actionsButton___12SV-']/img[1]' is displayed.</msg>
+<status status="PASS" starttime="20230910 20:55:45.955" endtime="20230910 20:55:45.975"/>
+</kw>
+<msg timestamp="20230910 20:55:45.975" level="INFO">${element1} = True</msg>
+<status status="PASS" starttime="20230910 20:55:45.955" endtime="20230910 20:55:45.975"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230910 20:55:45.975" endtime="20230910 20:55:45.975"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230910 20:55:45.986" level="INFO">Element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]' is displayed.</msg>
+<status status="PASS" starttime="20230910 20:55:45.975" endtime="20230910 20:55:45.986"/>
+</kw>
+<msg timestamp="20230910 20:55:45.986" level="INFO">${element2} = True</msg>
+<status status="PASS" starttime="20230910 20:55:45.975" endtime="20230910 20:55:45.986"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:55:47.995" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230910 20:55:45.986" endtime="20230910 20:55:47.995"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230910 20:55:47.995" endtime="20230910 20:55:47.995"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${element1}'=='True'</arg>
+<arg>Delete Daily Time Sheet</arg>
+<arg>ELSE</arg>
+<arg>Click Button</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Delete Daily Time Sheet" library="Hr_delete_time_sheet_keywords">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${edit_elemets}</var>
+<arg>${delete_sheet_xpath}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230910 20:55:47.995" level="INFO">${edit_elemets} = [&lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="41990331-cc1f-4383-bc7f-98d51c6777e9", element="4ec3ff6b-1eeb-4793-bf74-c39d34dd894c")&gt;]</msg>
+<status status="PASS" starttime="20230910 20:55:47.995" endtime="20230910 20:55:47.995"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${num_elements}</var>
+<arg>${edit_elemets}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20230910 20:55:47.995" level="INFO">Length is 1</msg>
+<msg timestamp="20230910 20:55:47.995" level="INFO">${num_elements} = 1</msg>
+<status status="PASS" starttime="20230910 20:55:47.995" endtime="20230910 20:55:47.995"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>thipe ${num_elements}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230910 20:55:47.995" endtime="20230910 20:55:47.995"/>
+</kw>
+<if>
+<branch type="IF" condition="'${num_elements}' == '1'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Thippeswammy</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230910 20:55:48.010" endtime="20230910 20:55:48.010"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>${delete_sheet_xpath}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20230910 20:55:48.010" level="INFO">Clicking image 'xpath://div[@class='actionsButton___12SV-']/img[3]'.</msg>
+<status status="PASS" starttime="20230910 20:55:48.010" endtime="20230910 20:55:48.280"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230910 20:55:48.280" level="INFO">Clicking button 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]'.</msg>
+<status status="PASS" starttime="20230910 20:55:48.280" endtime="20230910 20:55:48.646"/>
+</kw>
+<msg timestamp="20230910 20:55:48.646" level="INFO">${Delete_button} = ('PASS', None)</msg>
+<status status="PASS" starttime="20230910 20:55:48.280" endtime="20230910 20:55:48.646"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:55:53.661" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230910 20:55:48.646" endtime="20230910 20:55:53.661"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230910 20:55:53.661" level="INFO">Clicking element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]'.</msg>
+<status status="PASS" starttime="20230910 20:55:53.661" endtime="20230910 20:55:53.900"/>
+</kw>
+<status status="PASS" starttime="20230910 20:55:48.010" endtime="20230910 20:55:53.900"/>
+</branch>
+<status status="PASS" starttime="20230910 20:55:48.010" endtime="20230910 20:55:53.900"/>
+</if>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:55:58.904" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230910 20:55:53.900" endtime="20230910 20:55:58.904"/>
+</kw>
+<if>
+<branch type="IF" condition="'${num_elements}' != '1'">
+<for flavor="IN ENUMERATE">
+<var>${index}</var>
+<var>${element}</var>
+<value>@{edit_elemets}</value>
+<iter>
+<var name="${index}"/>
+<var name="${element}"/>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${is_clickable}</var>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" starttime="20230910 20:55:58.905" endtime="20230910 20:55:58.905"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230910 20:55:58.905" endtime="20230910 20:55:58.905"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" starttime="20230910 20:55:58.905" endtime="20230910 20:55:58.905"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230910 20:55:58.905" endtime="20230910 20:55:58.905"/>
+</kw>
+<status status="NOT RUN" starttime="20230910 20:55:58.905" endtime="20230910 20:55:58.905"/>
+</iter>
+<status status="NOT RUN" starttime="20230910 20:55:58.905" endtime="20230910 20:55:58.905"/>
+</for>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230910 20:55:58.905" endtime="20230910 20:55:58.905"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230910 20:55:58.905" endtime="20230910 20:55:58.905"/>
+</kw>
+<status status="NOT RUN" starttime="20230910 20:55:58.904" endtime="20230910 20:55:58.905"/>
+</branch>
+<status status="PASS" starttime="20230910 20:55:58.904" endtime="20230910 20:55:58.905"/>
+</if>
+<status status="PASS" starttime="20230910 20:55:47.995" endtime="20230910 20:55:58.905"/>
+</kw>
+<status status="PASS" starttime="20230910 20:55:47.995" endtime="20230910 20:55:58.905"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 20:56:01.910" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230910 20:55:58.905" endtime="20230910 20:56:01.912"/>
+</kw>
+<status status="PASS" starttime="20230910 20:55:45.955" endtime="20230910 20:56:01.912"/>
+</iter>
+<status status="PASS" starttime="20230910 20:54:25.100" endtime="20230910 20:56:01.912"/>
+</for>
+<status status="PASS" starttime="20230910 20:54:25.099" endtime="20230910 20:56:01.912"/>
+</kw>
+<status status="PASS" starttime="20230910 20:52:29.085" endtime="20230910 20:56:01.912"/>
+</test>
+<status status="PASS" starttime="20230910 20:52:28.866" endtime="20230910 20:56:01.912"/>
+</suite>
+<status status="PASS" starttime="20230910 20:52:28.866" endtime="20230910 20:56:01.912"/>
+</suite>
+<status status="PASS" starttime="20230910 20:52:28.866" endtime="20230910 20:56:01.912"/>
+</suite>
+<status status="PASS" starttime="20230910 20:52:28.866" endtime="20230910 20:56:01.927"/>
+</suite>
+<status status="PASS" starttime="20230910 20:52:28.866" endtime="20230910 20:56:01.927"/>
+</suite>
+<status status="PASS" starttime="20230910 20:52:28.844" endtime="20230910 20:56:01.927"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Framework">Robot Framework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Framework">Robot Framework.Framework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TestCycles">Robot Framework.Framework.TestCycles</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Module1">Robot Framework.Framework.TestCycles.Module1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Testscenerio">Robot Framework.Framework.TestCycles.Module1.Testscenerio</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1" name="Testcase44">Robot Framework.Framework.TestCycles.Module1.Testscenerio.Testcase44</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

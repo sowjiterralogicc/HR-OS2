@@ -5,13 +5,13 @@ ${guru99_registation_portal}    https://demo.guru99.com/test/newtours/register.p
 ${para_registration_portal}     https://parabank.parasoft.com/parabank/register.htm
 
 
-${firstname}            thippeswamy2
-${lastname}             uppara
-${address}              1-192
+${firstname}            sowjanya
+${lastname}             N
+${address}              8/31
 ${city}                 Bengaluru
 ${state}                Karnataka
 ${postalcode}           515870
-${phone}                9550084492
-${username}             thippeswamy
+${phone}                6309479867
+${username}             sowjanya
 ${password}             12345678
 ${confirm_password}     12345678
