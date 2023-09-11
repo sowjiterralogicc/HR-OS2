@@ -8,8 +8,8 @@ Resource    ../../../Resources/Keywords/Hr_top_menu_keywords.robot
 *** Test Cases ***
 Login Into Hros And Check The Top Menu Functionalities
     Open Terralogic Website    # Open the Terralogic website
-    Click on terralogic_login    # Click on the login button
-    Switch to window    # Switch to a new window for login
+    Click on terralogic_login
+    Switch to window
     Login to Gmail    ${Username}    ${Password}    ${Hros_user_xpath}     ${Hros_pass_xpath}
     Sleep    5s
     Switch Back To Main Window

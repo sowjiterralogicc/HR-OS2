@@ -16,6 +16,6 @@ ${description}          //*[@id="basic_tasks_0_notes"]
 ${submit}               //button[@type='submit']
 
 ${task_name_value}      Robot framework
-${description_value}    Valuating Test cases
+${description_value}    Validating Test cases
 ${date_xpath}       xpath://td[@title='2023-09-05']
 @{Weekend}          Saturday    Sunday

@@ -21,8 +21,9 @@ Mouse Hover Functionality
     Sleep    5s
 
     Click Element     ${elements_xpath_1}
-    sleep   2s
+    sleep   5s
     Click ELement     ${mose_hover_cross_xpath}
+
     Execute JavaScript    location.reload(true)
     sleep    5s
 
@@ -33,9 +34,10 @@ Mouse Hover Functionality
     Press Keys       ${hover_element}       \\13
     Sleep    5s
     Click Element     ${elements_xpath_2}
-    sleep   2s
+    sleep   5s
     Click Element     ${mose_hover_cross_xpath}
-
+    Execute JavaScript    location.reload(true)
+    Sleep  5s
     ${hover_element}=    Get WebElement    ${mouse_hover_action}
     Mouse Over      ${hover_element}
     Press Keys       ${hover_element}       \\13

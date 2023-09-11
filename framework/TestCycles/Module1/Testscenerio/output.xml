@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230911 12:05:06.818" rpa="false" schemaversion="4">
-<suite id="s1" name="Testcase3" source="C:\Users\Sowjanya N-3147\Downloads\Robot_Framework\Robot_Framework\framework\TestCycles\Module1\Testscenerio\testcase3.robot">
-<test id="s1-t1" name="Gmail Login and Update Personal Information" line="8">
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230911 15:09:30.812" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase44" source="C:\Users\Sowjanya N-3147\Downloads\Robot_Framework\Robot_Framework\framework\TestCycles\Module1\Testscenerio\testcase44.robot">
+<test id="s1-t1" name="Delete Time Sheet On Daily" line="9">
 <kw name="Open Terralogic Website" library="Hr_login_po">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${BaseURL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230911 12:05:07.031" level="INFO">Opening browser 'Chrome' to base url 'https://terralogic.paxanimi.ai/login'.</msg>
-<status status="PASS" starttime="20230911 12:05:07.031" endtime="20230911 12:05:12.650"/>
+<msg timestamp="20230911 15:09:31.128" level="INFO">Opening browser 'Chrome' to base url 'https://terralogic.paxanimi.ai/login'.</msg>
+<status status="PASS" starttime="20230911 15:09:31.127" endtime="20230911 15:09:39.462"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20230911 12:05:12.650" endtime="20230911 12:05:12.652"/>
+<status status="PASS" starttime="20230911 15:09:39.463" endtime="20230911 15:09:39.466"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230911 12:05:12.652" endtime="20230911 12:05:12.771"/>
+<status status="PASS" starttime="20230911 15:09:39.467" endtime="20230911 15:09:39.593"/>
 </kw>
-<status status="PASS" starttime="20230911 12:05:07.029" endtime="20230911 12:05:12.771"/>
+<status status="PASS" starttime="20230911 15:09:31.126" endtime="20230911 15:09:39.593"/>
 </kw>
 <kw name="Click on terralogic_login" library="Hr_login_keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${terralogic_login}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230911 12:05:12.774" level="INFO">Clicking element 'xpath://button[@class='ant-btn ant-btn-round ant-btn-default ant-btn-lg MyButton__outline']'.</msg>
-<status status="PASS" starttime="20230911 12:05:12.773" endtime="20230911 12:05:12.843"/>
+<msg timestamp="20230911 15:09:39.596" level="INFO">Clicking element 'xpath://button[@class='ant-btn ant-btn-round ant-btn-default ant-btn-lg MyButton__outline']'.</msg>
+<status status="PASS" starttime="20230911 15:09:39.594" endtime="20230911 15:09:39.728"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230911 12:05:22.844" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20230911 12:05:12.843" endtime="20230911 12:05:22.844"/>
+<msg timestamp="20230911 15:09:49.729" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230911 15:09:39.728" endtime="20230911 15:09:49.729"/>
 </kw>
-<status status="PASS" starttime="20230911 12:05:12.772" endtime="20230911 12:05:22.844"/>
+<status status="PASS" starttime="20230911 15:09:39.594" endtime="20230911 15:09:49.730"/>
 </kw>
 <kw name="Switch to window" library="Hr_login_keywords">
 <kw name="Get Window Handles" library="SeleniumLibrary">
 <var>${handles}</var>
 <doc>Returns all child window handles of the selected browser as a list.</doc>
-<msg timestamp="20230911 12:05:22.884" level="INFO">${handles} = ['99FB153DDB6C05EB994020862BD85763', '1E584D23B45A870F8559C141CF6F40CC']</msg>
-<status status="PASS" starttime="20230911 12:05:22.848" endtime="20230911 12:05:22.884"/>
+<msg timestamp="20230911 15:09:49.768" level="INFO">${handles} = ['14FF36D9C2DBC8F3948B6B6DB7BC06BF', '5367A36AF99C598B42CAA486AB568425']</msg>
+<status status="PASS" starttime="20230911 15:09:49.733" endtime="20230911 15:09:49.768"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>${handles}[1]</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20230911 12:05:22.885" endtime="20230911 12:05:22.966"/>
+<status status="PASS" starttime="20230911 15:09:49.769" endtime="20230911 15:09:49.857"/>
 </kw>
-<status status="PASS" starttime="20230911 12:05:22.846" endtime="20230911 12:05:22.967"/>
+<status status="PASS" starttime="20230911 15:09:49.731" endtime="20230911 15:09:49.857"/>
 </kw>
 <kw name="Login to Gmail" library="Hr_login_keywords">
 <arg>${Username}</arg>
@@ -59,203 +59,1093 @@
 <arg>${user_xpath}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230911 12:05:22.968" level="INFO">Typing text 'sowjanya.n@terralogic.com' into text field 'xpath://input[@id='identifierId']'.</msg>
-<status status="PASS" starttime="20230911 12:05:22.968" endtime="20230911 12:05:23.141"/>
+<msg timestamp="20230911 15:09:49.859" level="INFO">Typing text 'sowjanya.n@terralogic.com' into text field 'xpath://input[@id='identifierId']'.</msg>
+<status status="PASS" starttime="20230911 15:09:49.858" endtime="20230911 15:09:50.096"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230911 12:05:28.142" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230911 12:05:23.141" endtime="20230911 12:05:28.142"/>
+<msg timestamp="20230911 15:09:55.097" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:09:50.096" endtime="20230911 15:09:55.098"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Next}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230911 12:05:28.143" level="INFO">Clicking button 'xpath://span[text()='Next']//parent::button'.</msg>
-<status status="PASS" starttime="20230911 12:05:28.142" endtime="20230911 12:05:28.326"/>
+<msg timestamp="20230911 15:09:55.101" level="INFO">Clicking button 'xpath://span[text()='Next']//parent::button'.</msg>
+<status status="PASS" starttime="20230911 15:09:55.098" endtime="20230911 15:09:55.524"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>30s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230911 12:05:58.327" level="INFO">Slept 30 seconds</msg>
-<status status="PASS" starttime="20230911 12:05:28.326" endtime="20230911 12:05:58.328"/>
+<msg timestamp="20230911 15:10:25.525" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20230911 15:09:55.524" endtime="20230911 15:10:25.525"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${pass_xpath}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230911 12:05:58.329" level="INFO">Typing text 'sowji1999@26' into text field 'xpath://input[@name='Passwd']'.</msg>
-<status status="PASS" starttime="20230911 12:05:58.328" endtime="20230911 12:05:58.483"/>
+<msg timestamp="20230911 15:10:25.528" level="INFO">Typing text 'sowji1999@26' into text field 'xpath://input[@name='Passwd']'.</msg>
+<status status="PASS" starttime="20230911 15:10:25.525" endtime="20230911 15:10:25.767"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230911 12:06:03.484" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230911 12:05:58.483" endtime="20230911 12:06:03.484"/>
+<msg timestamp="20230911 15:10:30.768" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:10:25.767" endtime="20230911 15:10:30.768"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Next}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230911 12:06:03.485" level="INFO">Clicking button 'xpath://span[text()='Next']//parent::button'.</msg>
-<status status="PASS" starttime="20230911 12:06:03.484" endtime="20230911 12:06:03.601"/>
+<msg timestamp="20230911 15:10:30.771" level="INFO">Clicking button 'xpath://span[text()='Next']//parent::button'.</msg>
+<status status="PASS" starttime="20230911 15:10:30.768" endtime="20230911 15:10:31.032"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>30s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230911 12:06:33.601" level="INFO">Slept 30 seconds</msg>
-<status status="PASS" starttime="20230911 12:06:03.601" endtime="20230911 12:06:33.601"/>
+<msg timestamp="20230911 15:11:01.033" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20230911 15:10:31.033" endtime="20230911 15:11:01.033"/>
 </kw>
-<status status="PASS" starttime="20230911 12:05:22.967" endtime="20230911 12:06:33.601"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>Hr_OS Login Successful verified !!!!!</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230911 12:06:33.602" endtime="20230911 12:06:33.602"/>
+<status status="PASS" starttime="20230911 15:09:49.858" endtime="20230911 15:11:01.033"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>40s</arg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230911 12:07:13.603" level="INFO">Slept 40 seconds</msg>
-<status status="PASS" starttime="20230911 12:06:33.603" endtime="20230911 12:07:13.603"/>
+<msg timestamp="20230911 15:11:06.035" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:11:01.034" endtime="20230911 15:11:06.035"/>
 </kw>
-<kw name="Logout from Hr-OS" library="Hr_login_po">
+<kw name="Switch Back To Main Window" library="Hr_login_keywords">
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230911 15:11:06.046" level="INFO">${handles} = ['14FF36D9C2DBC8F3948B6B6DB7BC06BF']</msg>
+<status status="PASS" starttime="20230911 15:11:06.039" endtime="20230911 15:11:06.046"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230911 15:11:06.047" endtime="20230911 15:11:06.074"/>
+</kw>
+<status status="PASS" starttime="20230911 15:11:06.037" endtime="20230911 15:11:06.075"/>
+</kw>
+<kw name="Click On TimeSheet Menu" library="Hr_delete_time_sheet_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${timesheet}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230911 15:11:06.078" endtime="20230911 15:11:09.423"/>
+</kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://span[@class='ant-avatar ant-avatar-circle ant-avatar-image MyAvatar'][1]</arg>
+<arg>${timesheet}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230911 12:07:13.606" level="INFO">Clicking element 'xpath://span[@class='ant-avatar ant-avatar-circle ant-avatar-image MyAvatar'][1]'.</msg>
-<msg timestamp="20230911 12:07:13.611" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=116.0.5845.180)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7786252A2+57122]
-	(No symbol) [0x00007FF77859EA92]
-	(No symbol) [0x00007FF77846E3AB]
-	(No symbol) [0x00007FF77844E1B9]
-	(No symbol) [0x00007FF7784CB417]
-	(No symbol) [0x00007FF7784DE24F]
-	(No symbol) [0x00007FF7784C6DB3]
-	(No symbol) [0x00007FF77849D2B1]
-	(No symbol) [0x00007FF77849E494]
-	GetHandleVerifier [0x00007FF7788CEF82+2849794]
-	GetHandleVerifier [0x00007FF778921D24+3189156]
-	GetHandleVerifier [0x00007FF77891ACAF+3160367]
-	GetHandleVerifier [0x00007FF7786B6D06+653702]
-	(No symbol) [0x00007FF7785AA208]
-	(No symbol) [0x00007FF7785A62C4]
-	(No symbol) [0x00007FF7785A63F6]
-	(No symbol) [0x00007FF7785967A3]
-	BaseThreadInitThunk [0x00007FF8B87E26AD+29]
-	RtlUserThreadStart [0x00007FF8B95CAA68+40]
-</msg>
-<msg timestamp="20230911 12:07:13.613" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=116.0.5845.180)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7786252A2+57122]
-	(No symbol) [0x00007FF77859EA92]
-	(No symbol) [0x00007FF77846E3AB]
-	(No symbol) [0x00007FF77844E1B9]
-	(No symbol) [0x00007FF7784CB417]
-	(No symbol) [0x00007FF7784DE24F]
-	(No symbol) [0x00007FF7784C6DB3]
-	(No symbol) [0x00007FF77849D2B1]
-	(No symbol) [0x00007FF77849E494]
-	GetHandleVerifier [0x00007FF7788CEF82+2849794]
-	GetHandleVerifier [0x00007FF778921D24+3189156]
-	GetHandleVerifier [0x00007FF77891ACAF+3160367]
-	GetHandleVerifier [0x00007FF7786B6D06+653702]
-	(No symbol) [0x00007FF7785AA208]
-	(No symbol) [0x00007FF7785A62C4]
-	(No symbol) [0x00007FF7785A63F6]
-	(No symbol) [0x00007FF7785967A3]
-	BaseThreadInitThunk [0x00007FF8B87E26AD+29]
-	RtlUserThreadStart [0x00007FF8B95CAA68+40]
-</msg>
-<status status="FAIL" starttime="20230911 12:07:13.605" endtime="20230911 12:07:13.667"/>
+<msg timestamp="20230911 15:11:09.424" level="INFO">Clicking element '//a[@href='/time-sheet']'.</msg>
+<status status="PASS" starttime="20230911 15:11:09.424" endtime="20230911 15:11:09.528"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:11:14.530" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:11:09.529" endtime="20230911 15:11:14.530"/>
+</kw>
+<status status="PASS" starttime="20230911 15:11:06.077" endtime="20230911 15:11:14.531"/>
+</kw>
+<kw name="Mouse Over TO Task Header" library="Hr_delete_time_sheet_keywords">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Task_Header_xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230911 15:11:14.536" level="INFO">Simulating Mouse Over on element 'xpath://div[@class='ant-row']/div[4]'.</msg>
+<status status="PASS" starttime="20230911 15:11:14.534" endtime="20230911 15:11:14.892"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:11:24.894" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230911 15:11:14.892" endtime="20230911 15:11:24.894"/>
+</kw>
+<status status="PASS" starttime="20230911 15:11:14.532" endtime="20230911 15:11:24.895"/>
+</kw>
+<kw name="Click Element if Visible" library="Hr_delete_time_sheet_keywords">
+<for flavor="IN">
+<var>${i}</var>
+<value>RANGE</value>
+<value>1</value>
+<value>To</value>
+<value>6</value>
+<iter>
+<var name="${i}">RANGE</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element1}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${edit_sheet_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${edit_sheet_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230911 15:11:24.986" level="INFO">Element 'xpath://div[@class='actionsButton___12SV-']/img[1]' is displayed.</msg>
+<status status="PASS" starttime="20230911 15:11:24.900" endtime="20230911 15:11:24.986"/>
+</kw>
+<msg timestamp="20230911 15:11:24.987" level="INFO">${element1} = True</msg>
+<status status="PASS" starttime="20230911 15:11:24.899" endtime="20230911 15:11:24.987"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230911 15:11:24.987" endtime="20230911 15:11:24.988"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230911 15:11:25.033" level="INFO">Element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]' is displayed.</msg>
+<status status="PASS" starttime="20230911 15:11:24.989" endtime="20230911 15:11:25.033"/>
+</kw>
+<msg timestamp="20230911 15:11:25.034" level="INFO">${element2} = True</msg>
+<status status="PASS" starttime="20230911 15:11:24.988" endtime="20230911 15:11:25.034"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230911 12:07:13.667" endtime="20230911 12:07:13.667"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://span[.='Logout']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230911 12:07:13.667" endtime="20230911 12:07:13.667"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230911 12:07:13.667" endtime="20230911 12:07:13.667"/>
-</kw>
-<status status="FAIL" starttime="20230911 12:07:13.604" endtime="20230911 12:07:13.667"/>
+<msg timestamp="20230911 15:11:27.034" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230911 15:11:25.034" endtime="20230911 15:11:27.034"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>Hr-OS Logout Successful verified !!!!!!!</arg>
+<arg>${element2}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20230911 12:07:13.668" endtime="20230911 12:07:13.668"/>
+<status status="PASS" starttime="20230911 15:11:27.035" endtime="20230911 15:11:27.037"/>
 </kw>
-<status status="FAIL" starttime="20230911 12:05:07.029" endtime="20230911 12:07:13.668">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${element1}'=='True'</arg>
+<arg>Delete Daily Time Sheet</arg>
+<arg>ELSE</arg>
+<arg>Click Button</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Delete Daily Time Sheet" library="Hr_delete_time_sheet_keywords">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${edit_elemets}</var>
+<arg>${delete_sheet_xpath}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230911 15:11:27.069" level="INFO">${edit_elemets} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_71")&gt;]</msg>
+<status status="PASS" starttime="20230911 15:11:27.040" endtime="20230911 15:11:27.069"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${num_elements}</var>
+<arg>${edit_elemets}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20230911 15:11:27.069" level="INFO">Length is 1</msg>
+<msg timestamp="20230911 15:11:27.069" level="INFO">${num_elements} = 1</msg>
+<status status="PASS" starttime="20230911 15:11:27.069" endtime="20230911 15:11:27.069"/>
+</kw>
+<if>
+<branch type="IF" condition="'${num_elements}' == '1'">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>${delete_sheet_xpath}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20230911 15:11:27.071" level="INFO">Clicking image 'xpath://div[@class='actionsButton___12SV-']/img[3]'.</msg>
+<status status="PASS" starttime="20230911 15:11:27.070" endtime="20230911 15:11:27.227"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230911 15:11:27.228" level="INFO">Clicking button 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]'.</msg>
+<status status="PASS" starttime="20230911 15:11:27.228" endtime="20230911 15:11:27.867"/>
+</kw>
+<msg timestamp="20230911 15:11:27.867" level="INFO">${Delete_button} = ('PASS', None)</msg>
+<status status="PASS" starttime="20230911 15:11:27.227" endtime="20230911 15:11:27.867"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:11:32.868" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:11:27.867" endtime="20230911 15:11:32.868"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 15:11:32.871" level="INFO">Clicking element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]'.</msg>
+<status status="PASS" starttime="20230911 15:11:32.869" endtime="20230911 15:11:33.009"/>
+</kw>
+<status status="PASS" starttime="20230911 15:11:27.070" endtime="20230911 15:11:33.009"/>
+</branch>
+<status status="PASS" starttime="20230911 15:11:27.070" endtime="20230911 15:11:33.009"/>
+</if>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:11:38.010" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:11:33.010" endtime="20230911 15:11:38.010"/>
+</kw>
+<if>
+<branch type="IF" condition="'${num_elements}' != '1'">
+<for flavor="IN ENUMERATE">
+<var>${index}</var>
+<var>${element}</var>
+<value>@{edit_elemets}</value>
+<iter>
+<var name="${index}"/>
+<var name="${element}"/>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${is_clickable}</var>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" starttime="20230911 15:11:38.011" endtime="20230911 15:11:38.011"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 15:11:38.011" endtime="20230911 15:11:38.011"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" starttime="20230911 15:11:38.011" endtime="20230911 15:11:38.011"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 15:11:38.011" endtime="20230911 15:11:38.011"/>
+</kw>
+<status status="NOT RUN" starttime="20230911 15:11:38.011" endtime="20230911 15:11:38.011"/>
+</iter>
+<status status="NOT RUN" starttime="20230911 15:11:38.010" endtime="20230911 15:11:38.011"/>
+</for>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 15:11:38.011" endtime="20230911 15:11:38.011"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 15:11:38.011" endtime="20230911 15:11:38.011"/>
+</kw>
+<status status="NOT RUN" starttime="20230911 15:11:38.010" endtime="20230911 15:11:38.011"/>
+</branch>
+<status status="PASS" starttime="20230911 15:11:38.010" endtime="20230911 15:11:38.011"/>
+</if>
+<status status="PASS" starttime="20230911 15:11:27.039" endtime="20230911 15:11:38.011"/>
+</kw>
+<status status="PASS" starttime="20230911 15:11:27.038" endtime="20230911 15:11:38.012"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:11:41.012" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230911 15:11:38.012" endtime="20230911 15:11:41.012"/>
+</kw>
+<status status="PASS" starttime="20230911 15:11:24.898" endtime="20230911 15:11:41.012"/>
+</iter>
+<iter>
+<var name="${i}">1</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element1}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${edit_sheet_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${edit_sheet_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230911 15:11:41.083" level="INFO">Element 'xpath://div[@class='actionsButton___12SV-']/img[1]' is displayed.</msg>
+<status status="PASS" starttime="20230911 15:11:41.015" endtime="20230911 15:11:41.083"/>
+</kw>
+<msg timestamp="20230911 15:11:41.084" level="INFO">${element1} = True</msg>
+<status status="PASS" starttime="20230911 15:11:41.014" endtime="20230911 15:11:41.084"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230911 15:11:41.084" endtime="20230911 15:11:41.085"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230911 15:11:41.134" level="INFO">Element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]' is displayed.</msg>
+<status status="PASS" starttime="20230911 15:11:41.086" endtime="20230911 15:11:41.134"/>
+</kw>
+<msg timestamp="20230911 15:11:41.135" level="INFO">${element2} = True</msg>
+<status status="PASS" starttime="20230911 15:11:41.085" endtime="20230911 15:11:41.135"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:11:43.136" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230911 15:11:41.135" endtime="20230911 15:11:43.136"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230911 15:11:43.136" endtime="20230911 15:11:43.139"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${element1}'=='True'</arg>
+<arg>Delete Daily Time Sheet</arg>
+<arg>ELSE</arg>
+<arg>Click Button</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Delete Daily Time Sheet" library="Hr_delete_time_sheet_keywords">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${edit_elemets}</var>
+<arg>${delete_sheet_xpath}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230911 15:11:43.182" level="INFO">${edit_elemets} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_92")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement...</msg>
+<status status="PASS" starttime="20230911 15:11:43.143" endtime="20230911 15:11:43.182"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${num_elements}</var>
+<arg>${edit_elemets}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20230911 15:11:43.184" level="INFO">Length is 2</msg>
+<msg timestamp="20230911 15:11:43.184" level="INFO">${num_elements} = 2</msg>
+<status status="PASS" starttime="20230911 15:11:43.183" endtime="20230911 15:11:43.184"/>
+</kw>
+<if>
+<branch type="IF" condition="'${num_elements}' == '1'">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>${delete_sheet_xpath}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 15:11:43.185" endtime="20230911 15:11:43.185"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" starttime="20230911 15:11:43.186" endtime="20230911 15:11:43.186"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 15:11:43.186" endtime="20230911 15:11:43.186"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 15:11:43.187" endtime="20230911 15:11:43.187"/>
+</kw>
+<status status="NOT RUN" starttime="20230911 15:11:43.184" endtime="20230911 15:11:43.187"/>
+</branch>
+<status status="PASS" starttime="20230911 15:11:43.184" endtime="20230911 15:11:43.187"/>
+</if>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:11:48.189" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:11:43.187" endtime="20230911 15:11:48.189"/>
+</kw>
+<if>
+<branch type="IF" condition="'${num_elements}' != '1'">
+<for flavor="IN ENUMERATE">
+<var>${index}</var>
+<var>${element}</var>
+<value>@{edit_elemets}</value>
+<iter>
+<var name="${index}">0</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_92")&gt;</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${is_clickable}</var>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 15:11:48.196" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_92")&gt;'.</msg>
+<msg timestamp="20230911 15:11:49.461" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230911 15:11:49.461" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;img src="/static/ic_delete.10ddaf87.svg" alt=""&gt; is not clickable at point (1264, 332). Other element would receive the click: &lt;img src="/static/ic_delete.10ddaf87.svg" alt=""&gt;
   (Session info: chrome=116.0.5845.180)
 Stacktrace:
-	GetHandleVerifier [0x00007FF7786252A2+57122]
-	(No symbol) [0x00007FF77859EA92]
-	(No symbol) [0x00007FF77846E3AB]
-	(No symbol) [0x00007FF77844E1B9]
-	(No symbol) [0x00007FF7784CB417]
-	(No symbol) [0x00007FF7784DE24F]
-	(No symbol) [0x00007FF7784C6DB3]
-	(No symbol) [0x00007FF77849D2B1]
-	(No symbol) [0x00007FF77849E494]
-	GetHandleVerifier [0x00007FF7788CEF82+2849794]
-	GetHandleVerifier [0x00007FF778921D24+3189156]
-	GetHandleVerifier [0x00007FF77891ACAF+3160367]
-	GetHandleVerifier [0x00007FF7786B6D06+653702]
-	(No symbol) [0x00007FF7785AA208]
-	(No symbol) [0x00007FF7785A62C4]
-	(No symbol) [0x00007FF7785A63F6]
-	(No symbol) [0x00007FF7785967A3]
+	GetHandleVerifier [0x00007FF68E8152A2+57122]
+	(No symbol) [0x00007FF68E78EA92]
+	(No symbol) [0x00007FF68E65E3AB]
+	(No symbol) [0x00007FF68E69D783]
+	(No symbol) [0x00007FF68E69BD5F]
+	(No symbol) [0x00007FF68E699DC8]
+	(No symbol) [0x00007FF68E698FD5]
+	(No symbol) [0x00007FF68E68F25F]
+	(No symbol) [0x00007FF68E6B6FDA]
+	(No symbol) [0x00007FF68E68EB76]
+	(No symbol) [0x00007FF68E6B71F0]
+	(No symbol) [0x00007FF68E6CEB82]
+	(No symbol) [0x00007FF68E6B6DB3]
+	(No symbol) [0x00007FF68E68D2B1]
+	(No symbol) [0x00007FF68E68E494]
+	GetHandleVerifier [0x00007FF68EABEF82+2849794]
+	GetHandleVerifier [0x00007FF68EB11D24+3189156]
+	GetHandleVerifier [0x00007FF68EB0ACAF+3160367]
+	GetHandleVerifier [0x00007FF68E8A6D06+653702]
+	(No symbol) [0x00007FF68E79A208]
+	(No symbol) [0x00007FF68E7962C4]
+	(No symbol) [0x00007FF68E7963F6]
+	(No symbol) [0x00007FF68E7867A3]
 	BaseThreadInitThunk [0x00007FF8B87E26AD+29]
 	RtlUserThreadStart [0x00007FF8B95CAA68+40]
-</status>
+</msg>
+<status status="FAIL" starttime="20230911 15:11:48.194" endtime="20230911 15:11:49.469"/>
+</kw>
+<msg timestamp="20230911 15:11:49.469" level="INFO">${is_clickable} = ('FAIL', 'ElementClickInterceptedException: Message: element click intercepted: Element &lt;img src="/static/ic_delete.10ddaf87.svg" alt=""&gt; is not clickable at point (1264, 332). Other element would rec...</msg>
+<status status="PASS" starttime="20230911 15:11:48.193" endtime="20230911 15:11:49.469"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:11:51.470" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230911 15:11:49.469" endtime="20230911 15:11:51.470"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230911 15:11:51.475" level="INFO">Clicking button 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]'.</msg>
+<msg timestamp="20230911 15:12:11.724" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230911 15:12:11.725" level="FAIL">Button with locator 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]' not found.</msg>
+<status status="FAIL" starttime="20230911 15:11:51.473" endtime="20230911 15:12:11.726"/>
+</kw>
+<msg timestamp="20230911 15:12:11.728" level="INFO">${Delete_button} = ('FAIL', "Button with locator 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]' not found.")</msg>
+<status status="PASS" starttime="20230911 15:11:51.471" endtime="20230911 15:12:11.728"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:12:16.729" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:12:11.728" endtime="20230911 15:12:16.729"/>
+</kw>
+<status status="PASS" starttime="20230911 15:11:48.191" endtime="20230911 15:12:16.729"/>
+</iter>
+<iter>
+<var name="${index}">1</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_93")&gt;</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${is_clickable}</var>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 15:12:16.734" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_93")&gt;'.</msg>
+<status status="PASS" starttime="20230911 15:12:16.732" endtime="20230911 15:12:16.911"/>
+</kw>
+<msg timestamp="20230911 15:12:16.911" level="INFO">${is_clickable} = ('PASS', None)</msg>
+<status status="PASS" starttime="20230911 15:12:16.731" endtime="20230911 15:12:16.911"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:12:18.911" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230911 15:12:16.911" endtime="20230911 15:12:18.911"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230911 15:12:18.916" level="INFO">Clicking button 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]'.</msg>
+<status status="PASS" starttime="20230911 15:12:18.914" endtime="20230911 15:12:19.164"/>
+</kw>
+<msg timestamp="20230911 15:12:19.164" level="INFO">${Delete_button} = ('PASS', None)</msg>
+<status status="PASS" starttime="20230911 15:12:18.913" endtime="20230911 15:12:19.164"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:12:24.166" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:12:19.165" endtime="20230911 15:12:24.166"/>
+</kw>
+<status status="PASS" starttime="20230911 15:12:16.730" endtime="20230911 15:12:24.166"/>
+</iter>
+<status status="PASS" starttime="20230911 15:11:48.190" endtime="20230911 15:12:24.167"/>
+</for>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 15:12:24.170" level="INFO">Clicking element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]'.</msg>
+<status status="PASS" starttime="20230911 15:12:24.168" endtime="20230911 15:12:24.304"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:12:29.306" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:12:24.305" endtime="20230911 15:12:29.306"/>
+</kw>
+<status status="PASS" starttime="20230911 15:11:48.189" endtime="20230911 15:12:29.306"/>
+</branch>
+<status status="PASS" starttime="20230911 15:11:48.189" endtime="20230911 15:12:29.307"/>
+</if>
+<status status="PASS" starttime="20230911 15:11:43.141" endtime="20230911 15:12:29.307"/>
+</kw>
+<status status="PASS" starttime="20230911 15:11:43.140" endtime="20230911 15:12:29.307"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:12:32.309" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230911 15:12:29.308" endtime="20230911 15:12:32.309"/>
+</kw>
+<status status="PASS" starttime="20230911 15:11:41.013" endtime="20230911 15:12:32.310"/>
+</iter>
+<iter>
+<var name="${i}">To</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element1}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${edit_sheet_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${edit_sheet_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230911 15:12:32.395" level="INFO">Element 'xpath://div[@class='actionsButton___12SV-']/img[1]' is displayed.</msg>
+<status status="PASS" starttime="20230911 15:12:32.313" endtime="20230911 15:12:32.395"/>
+</kw>
+<msg timestamp="20230911 15:12:32.396" level="INFO">${element1} = True</msg>
+<status status="PASS" starttime="20230911 15:12:32.311" endtime="20230911 15:12:32.396"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230911 15:12:32.397" endtime="20230911 15:12:32.398"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230911 15:12:32.444" level="INFO">Element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]' is displayed.</msg>
+<status status="PASS" starttime="20230911 15:12:32.399" endtime="20230911 15:12:32.444"/>
+</kw>
+<msg timestamp="20230911 15:12:32.444" level="INFO">${element2} = True</msg>
+<status status="PASS" starttime="20230911 15:12:32.398" endtime="20230911 15:12:32.444"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:12:34.445" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230911 15:12:32.444" endtime="20230911 15:12:34.445"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230911 15:12:34.446" endtime="20230911 15:12:34.448"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${element1}'=='True'</arg>
+<arg>Delete Daily Time Sheet</arg>
+<arg>ELSE</arg>
+<arg>Click Button</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Delete Daily Time Sheet" library="Hr_delete_time_sheet_keywords">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${edit_elemets}</var>
+<arg>${delete_sheet_xpath}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230911 15:12:34.491" level="INFO">${edit_elemets} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_126")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230911 15:12:34.452" endtime="20230911 15:12:34.492"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${num_elements}</var>
+<arg>${edit_elemets}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20230911 15:12:34.493" level="INFO">Length is 2</msg>
+<msg timestamp="20230911 15:12:34.493" level="INFO">${num_elements} = 2</msg>
+<status status="PASS" starttime="20230911 15:12:34.492" endtime="20230911 15:12:34.493"/>
+</kw>
+<if>
+<branch type="IF" condition="'${num_elements}' == '1'">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>${delete_sheet_xpath}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 15:12:34.495" endtime="20230911 15:12:34.495"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" starttime="20230911 15:12:34.495" endtime="20230911 15:12:34.495"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 15:12:34.496" endtime="20230911 15:12:34.496"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 15:12:34.496" endtime="20230911 15:12:34.497"/>
+</kw>
+<status status="NOT RUN" starttime="20230911 15:12:34.494" endtime="20230911 15:12:34.497"/>
+</branch>
+<status status="PASS" starttime="20230911 15:12:34.494" endtime="20230911 15:12:34.497"/>
+</if>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:12:39.500" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:12:34.498" endtime="20230911 15:12:39.500"/>
+</kw>
+<if>
+<branch type="IF" condition="'${num_elements}' != '1'">
+<for flavor="IN ENUMERATE">
+<var>${index}</var>
+<var>${element}</var>
+<value>@{edit_elemets}</value>
+<iter>
+<var name="${index}">0</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_126")&gt;</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${is_clickable}</var>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 15:12:39.507" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_126")&gt;'.</msg>
+<msg timestamp="20230911 15:12:40.777" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230911 15:12:40.777" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;img src="/static/ic_delete.10ddaf87.svg" alt=""&gt; is not clickable at point (1264, 332). Other element would receive the click: &lt;img src="/static/ic_delete.10ddaf87.svg" alt=""&gt;
+  (Session info: chrome=116.0.5845.180)
+Stacktrace:
+	GetHandleVerifier [0x00007FF68E8152A2+57122]
+	(No symbol) [0x00007FF68E78EA92]
+	(No symbol) [0x00007FF68E65E3AB]
+	(No symbol) [0x00007FF68E69D783]
+	(No symbol) [0x00007FF68E69BD5F]
+	(No symbol) [0x00007FF68E699DC8]
+	(No symbol) [0x00007FF68E698FD5]
+	(No symbol) [0x00007FF68E68F25F]
+	(No symbol) [0x00007FF68E6B6FDA]
+	(No symbol) [0x00007FF68E68EB76]
+	(No symbol) [0x00007FF68E6B71F0]
+	(No symbol) [0x00007FF68E6CEB82]
+	(No symbol) [0x00007FF68E6B6DB3]
+	(No symbol) [0x00007FF68E68D2B1]
+	(No symbol) [0x00007FF68E68E494]
+	GetHandleVerifier [0x00007FF68EABEF82+2849794]
+	GetHandleVerifier [0x00007FF68EB11D24+3189156]
+	GetHandleVerifier [0x00007FF68EB0ACAF+3160367]
+	GetHandleVerifier [0x00007FF68E8A6D06+653702]
+	(No symbol) [0x00007FF68E79A208]
+	(No symbol) [0x00007FF68E7962C4]
+	(No symbol) [0x00007FF68E7963F6]
+	(No symbol) [0x00007FF68E7867A3]
+	BaseThreadInitThunk [0x00007FF8B87E26AD+29]
+	RtlUserThreadStart [0x00007FF8B95CAA68+40]
+</msg>
+<status status="FAIL" starttime="20230911 15:12:39.504" endtime="20230911 15:12:40.779"/>
+</kw>
+<msg timestamp="20230911 15:12:40.779" level="INFO">${is_clickable} = ('FAIL', 'ElementClickInterceptedException: Message: element click intercepted: Element &lt;img src="/static/ic_delete.10ddaf87.svg" alt=""&gt; is not clickable at point (1264, 332). Other element would rec...</msg>
+<status status="PASS" starttime="20230911 15:12:39.503" endtime="20230911 15:12:40.780"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:12:42.780" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230911 15:12:40.780" endtime="20230911 15:12:42.780"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230911 15:12:42.785" level="INFO">Clicking button 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]'.</msg>
+<msg timestamp="20230911 15:13:02.954" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230911 15:13:02.954" level="FAIL">Button with locator 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]' not found.</msg>
+<status status="FAIL" starttime="20230911 15:12:42.783" endtime="20230911 15:13:02.955"/>
+</kw>
+<msg timestamp="20230911 15:13:02.955" level="INFO">${Delete_button} = ('FAIL', "Button with locator 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]' not found.")</msg>
+<status status="PASS" starttime="20230911 15:12:42.781" endtime="20230911 15:13:02.955"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:13:07.955" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:13:02.955" endtime="20230911 15:13:07.955"/>
+</kw>
+<status status="PASS" starttime="20230911 15:12:39.503" endtime="20230911 15:13:07.955"/>
+</iter>
+<iter>
+<var name="${index}">1</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_127")&gt;</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${is_clickable}</var>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 15:13:07.957" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_127")&gt;'.</msg>
+<status status="PASS" starttime="20230911 15:13:07.956" endtime="20230911 15:13:08.072"/>
+</kw>
+<msg timestamp="20230911 15:13:08.073" level="INFO">${is_clickable} = ('PASS', None)</msg>
+<status status="PASS" starttime="20230911 15:13:07.956" endtime="20230911 15:13:08.073"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:13:10.073" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230911 15:13:08.073" endtime="20230911 15:13:10.074"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230911 15:13:10.078" level="INFO">Clicking button 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]'.</msg>
+<status status="PASS" starttime="20230911 15:13:10.076" endtime="20230911 15:13:10.270"/>
+</kw>
+<msg timestamp="20230911 15:13:10.270" level="INFO">${Delete_button} = ('PASS', None)</msg>
+<status status="PASS" starttime="20230911 15:13:10.075" endtime="20230911 15:13:10.270"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:13:15.272" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:13:10.271" endtime="20230911 15:13:15.272"/>
+</kw>
+<status status="PASS" starttime="20230911 15:13:07.955" endtime="20230911 15:13:15.273"/>
+</iter>
+<status status="PASS" starttime="20230911 15:12:39.502" endtime="20230911 15:13:15.273"/>
+</for>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 15:13:15.275" level="INFO">Clicking element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]'.</msg>
+<status status="PASS" starttime="20230911 15:13:15.273" endtime="20230911 15:13:15.401"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:13:20.403" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:13:15.401" endtime="20230911 15:13:20.403"/>
+</kw>
+<status status="PASS" starttime="20230911 15:12:39.501" endtime="20230911 15:13:20.404"/>
+</branch>
+<status status="PASS" starttime="20230911 15:12:39.501" endtime="20230911 15:13:20.404"/>
+</if>
+<status status="PASS" starttime="20230911 15:12:34.450" endtime="20230911 15:13:20.404"/>
+</kw>
+<status status="PASS" starttime="20230911 15:12:34.449" endtime="20230911 15:13:20.404"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:13:23.407" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230911 15:13:20.405" endtime="20230911 15:13:23.407"/>
+</kw>
+<status status="PASS" starttime="20230911 15:12:32.310" endtime="20230911 15:13:23.408"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element1}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${edit_sheet_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${edit_sheet_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230911 15:13:23.492" level="INFO">Element 'xpath://div[@class='actionsButton___12SV-']/img[1]' is displayed.</msg>
+<status status="PASS" starttime="20230911 15:13:23.412" endtime="20230911 15:13:23.492"/>
+</kw>
+<msg timestamp="20230911 15:13:23.493" level="INFO">${element1} = True</msg>
+<status status="PASS" starttime="20230911 15:13:23.410" endtime="20230911 15:13:23.493"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230911 15:13:23.493" endtime="20230911 15:13:23.495"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230911 15:13:23.553" level="INFO">Element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]' is displayed.</msg>
+<status status="PASS" starttime="20230911 15:13:23.496" endtime="20230911 15:13:23.554"/>
+</kw>
+<msg timestamp="20230911 15:13:23.554" level="INFO">${element2} = True</msg>
+<status status="PASS" starttime="20230911 15:13:23.495" endtime="20230911 15:13:23.554"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:13:25.555" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230911 15:13:23.554" endtime="20230911 15:13:25.555"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230911 15:13:25.556" endtime="20230911 15:13:25.557"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${element1}'=='True'</arg>
+<arg>Delete Daily Time Sheet</arg>
+<arg>ELSE</arg>
+<arg>Click Button</arg>
+<arg>${forward_button_xpath}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Delete Daily Time Sheet" library="Hr_delete_time_sheet_keywords">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${edit_elemets}</var>
+<arg>${delete_sheet_xpath}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230911 15:13:25.600" level="INFO">${edit_elemets} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_160")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230911 15:13:25.560" endtime="20230911 15:13:25.600"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${num_elements}</var>
+<arg>${edit_elemets}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20230911 15:13:25.601" level="INFO">Length is 2</msg>
+<msg timestamp="20230911 15:13:25.601" level="INFO">${num_elements} = 2</msg>
+<status status="PASS" starttime="20230911 15:13:25.601" endtime="20230911 15:13:25.601"/>
+</kw>
+<if>
+<branch type="IF" condition="'${num_elements}' == '1'">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>${delete_sheet_xpath}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 15:13:25.602" endtime="20230911 15:13:25.602"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" starttime="20230911 15:13:25.602" endtime="20230911 15:13:25.603"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 15:13:25.603" endtime="20230911 15:13:25.603"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 15:13:25.603" endtime="20230911 15:13:25.603"/>
+</kw>
+<status status="NOT RUN" starttime="20230911 15:13:25.602" endtime="20230911 15:13:25.603"/>
+</branch>
+<status status="PASS" starttime="20230911 15:13:25.601" endtime="20230911 15:13:25.603"/>
+</if>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:13:30.604" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:13:25.603" endtime="20230911 15:13:30.605"/>
+</kw>
+<if>
+<branch type="IF" condition="'${num_elements}' != '1'">
+<for flavor="IN ENUMERATE">
+<var>${index}</var>
+<var>${element}</var>
+<value>@{edit_elemets}</value>
+<iter>
+<var name="${index}">0</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_160")&gt;</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${is_clickable}</var>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 15:13:30.610" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_160")&gt;'.</msg>
+<msg timestamp="20230911 15:13:31.891" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230911 15:13:31.891" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;img src="/static/ic_delete.10ddaf87.svg" alt=""&gt; is not clickable at point (1264, 332). Other element would receive the click: &lt;img src="/static/ic_delete.10ddaf87.svg" alt=""&gt;
+  (Session info: chrome=116.0.5845.180)
+Stacktrace:
+	GetHandleVerifier [0x00007FF68E8152A2+57122]
+	(No symbol) [0x00007FF68E78EA92]
+	(No symbol) [0x00007FF68E65E3AB]
+	(No symbol) [0x00007FF68E69D783]
+	(No symbol) [0x00007FF68E69BD5F]
+	(No symbol) [0x00007FF68E699DC8]
+	(No symbol) [0x00007FF68E698FD5]
+	(No symbol) [0x00007FF68E68F25F]
+	(No symbol) [0x00007FF68E6B6FDA]
+	(No symbol) [0x00007FF68E68EB76]
+	(No symbol) [0x00007FF68E6B71F0]
+	(No symbol) [0x00007FF68E6CEB82]
+	(No symbol) [0x00007FF68E6B6DB3]
+	(No symbol) [0x00007FF68E68D2B1]
+	(No symbol) [0x00007FF68E68E494]
+	GetHandleVerifier [0x00007FF68EABEF82+2849794]
+	GetHandleVerifier [0x00007FF68EB11D24+3189156]
+	GetHandleVerifier [0x00007FF68EB0ACAF+3160367]
+	GetHandleVerifier [0x00007FF68E8A6D06+653702]
+	(No symbol) [0x00007FF68E79A208]
+	(No symbol) [0x00007FF68E7962C4]
+	(No symbol) [0x00007FF68E7963F6]
+	(No symbol) [0x00007FF68E7867A3]
+	BaseThreadInitThunk [0x00007FF8B87E26AD+29]
+	RtlUserThreadStart [0x00007FF8B95CAA68+40]
+</msg>
+<status status="FAIL" starttime="20230911 15:13:30.608" endtime="20230911 15:13:31.893"/>
+</kw>
+<msg timestamp="20230911 15:13:31.894" level="INFO">${is_clickable} = ('FAIL', 'ElementClickInterceptedException: Message: element click intercepted: Element &lt;img src="/static/ic_delete.10ddaf87.svg" alt=""&gt; is not clickable at point (1264, 332). Other element would rec...</msg>
+<status status="PASS" starttime="20230911 15:13:30.607" endtime="20230911 15:13:31.894"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:13:33.895" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230911 15:13:31.894" endtime="20230911 15:13:33.895"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230911 15:13:33.899" level="INFO">Clicking button 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]'.</msg>
+<msg timestamp="20230911 15:13:54.137" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230911 15:13:54.138" level="FAIL">Button with locator 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]' not found.</msg>
+<status status="FAIL" starttime="20230911 15:13:33.897" endtime="20230911 15:13:54.141"/>
+</kw>
+<msg timestamp="20230911 15:13:54.141" level="INFO">${Delete_button} = ('FAIL', "Button with locator 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]' not found.")</msg>
+<status status="PASS" starttime="20230911 15:13:33.896" endtime="20230911 15:13:54.141"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:13:59.142" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:13:54.141" endtime="20230911 15:13:59.142"/>
+</kw>
+<status status="PASS" starttime="20230911 15:13:30.606" endtime="20230911 15:13:59.143"/>
+</iter>
+<iter>
+<var name="${index}">1</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_161")&gt;</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${is_clickable}</var>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 15:13:59.147" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6a088bc0a4c86467b98063db76658a83", element="A7207F4CF817B9F0CE40CB06E4E83674_element_161")&gt;'.</msg>
+<status status="PASS" starttime="20230911 15:13:59.145" endtime="20230911 15:13:59.292"/>
+</kw>
+<msg timestamp="20230911 15:13:59.292" level="INFO">${is_clickable} = ('PASS', None)</msg>
+<status status="PASS" starttime="20230911 15:13:59.144" endtime="20230911 15:13:59.292"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:14:01.293" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230911 15:13:59.292" endtime="20230911 15:14:01.293"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<var>${Delete_button}</var>
+<arg>Click Button</arg>
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://div[@class='ant-modal ActionModal']//descendant::button[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230911 15:14:01.298" level="INFO">Clicking button 'xpath://div[@class='ant-modal ActionModal']//descendant::button[3]'.</msg>
+<status status="PASS" starttime="20230911 15:14:01.296" endtime="20230911 15:14:01.510"/>
+</kw>
+<msg timestamp="20230911 15:14:01.510" level="INFO">${Delete_button} = ('PASS', None)</msg>
+<status status="PASS" starttime="20230911 15:14:01.295" endtime="20230911 15:14:01.510"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:14:06.511" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:14:01.510" endtime="20230911 15:14:06.511"/>
+</kw>
+<status status="PASS" starttime="20230911 15:13:59.143" endtime="20230911 15:14:06.512"/>
+</iter>
+<status status="PASS" starttime="20230911 15:13:30.606" endtime="20230911 15:14:06.512"/>
+</for>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forward_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 15:14:06.514" level="INFO">Clicking element 'xpath://div[@class='MyArrowDatePicker']//descendant::button[2]'.</msg>
+<status status="PASS" starttime="20230911 15:14:06.512" endtime="20230911 15:14:06.635"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:14:11.636" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230911 15:14:06.636" endtime="20230911 15:14:11.636"/>
+</kw>
+<status status="PASS" starttime="20230911 15:13:30.605" endtime="20230911 15:14:11.637"/>
+</branch>
+<status status="PASS" starttime="20230911 15:13:30.605" endtime="20230911 15:14:11.637"/>
+</if>
+<status status="PASS" starttime="20230911 15:13:25.559" endtime="20230911 15:14:11.638"/>
+</kw>
+<status status="PASS" starttime="20230911 15:13:25.558" endtime="20230911 15:14:11.638"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 15:14:14.640" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230911 15:14:11.639" endtime="20230911 15:14:14.640"/>
+</kw>
+<status status="PASS" starttime="20230911 15:13:23.408" endtime="20230911 15:14:14.641"/>
+</iter>
+<status status="PASS" starttime="20230911 15:11:24.898" endtime="20230911 15:14:14.641"/>
+</for>
+<status status="PASS" starttime="20230911 15:11:24.896" endtime="20230911 15:14:14.641"/>
+</kw>
+<status status="PASS" starttime="20230911 15:09:31.124" endtime="20230911 15:14:14.644"/>
 </test>
-<status status="FAIL" starttime="20230911 12:05:06.821" endtime="20230911 12:07:13.671"/>
+<status status="PASS" starttime="20230911 15:09:30.815" endtime="20230911 15:14:14.649"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Testcase3">Testcase3</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase44">Testcase44</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230911 12:07:13.611" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=116.0.5845.180)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7786252A2+57122]
-	(No symbol) [0x00007FF77859EA92]
-	(No symbol) [0x00007FF77846E3AB]
-	(No symbol) [0x00007FF77844E1B9]
-	(No symbol) [0x00007FF7784CB417]
-	(No symbol) [0x00007FF7784DE24F]
-	(No symbol) [0x00007FF7784C6DB3]
-	(No symbol) [0x00007FF77849D2B1]
-	(No symbol) [0x00007FF77849E494]
-	GetHandleVerifier [0x00007FF7788CEF82+2849794]
-	GetHandleVerifier [0x00007FF778921D24+3189156]
-	GetHandleVerifier [0x00007FF77891ACAF+3160367]
-	GetHandleVerifier [0x00007FF7786B6D06+653702]
-	(No symbol) [0x00007FF7785AA208]
-	(No symbol) [0x00007FF7785A62C4]
-	(No symbol) [0x00007FF7785A63F6]
-	(No symbol) [0x00007FF7785967A3]
-	BaseThreadInitThunk [0x00007FF8B87E26AD+29]
-	RtlUserThreadStart [0x00007FF8B95CAA68+40]
-</msg>
 </errors>
 </robot>
