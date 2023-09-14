@@ -8,12 +8,12 @@ Library    String
 Library    Collections
 
 *** Keywords ***
-Mouse Over TO Task Header
+Mouse Over TO Task Hheader
 	Mouse Over      ${Task_Header_xpath}
     sleep   10s
 Click On Weekly Basis Button
 	Click ELement    ${Weekily_lable_xpath}
-Click On TimeSheet Menu
+Click On TimeSheet Mmenu
 	Wait Until Element Is Visible    ${timesheet}
     Click Element    ${timesheet}
     Sleep   5s

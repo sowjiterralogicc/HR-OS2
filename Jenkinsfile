@@ -38,8 +38,7 @@ pipeline {
                      // Run Robot Framework tests for module 2
                    bat 'robot testcase44.robot'
                 }
-
             }
         }
     }
-}
+ }

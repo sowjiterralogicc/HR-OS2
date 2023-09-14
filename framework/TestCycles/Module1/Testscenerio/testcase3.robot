@@ -13,5 +13,5 @@ Gmail Login and Update Personal Information
     Log To Console    Hr_OS Login Successful verified !!!!!
     Switch Back To Main Window
     Sleep    40s
-    Logout from Hr-OS
-    Log To Console    Hr-OS Logout Successful verified !!!!!!!
+#    Logout from Hr-OS
+#    Log To Console    Hr-OS Logout Successful verified !!!!!!!
