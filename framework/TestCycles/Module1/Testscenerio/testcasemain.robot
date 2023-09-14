@@ -26,7 +26,7 @@ Gmail Login and Update Personal Information
      Profile Functionality
      #LEFT MENU FUNCTIONALITY
      Left Side Menu
-     DAILY BASIS TIMESHEET
+#    DAILY BASIS TIMESHEET
      Time Sheet for a week on Daily basis
 #    Close The Browser
 #   WEEKLY BASIS TIMESHEET
