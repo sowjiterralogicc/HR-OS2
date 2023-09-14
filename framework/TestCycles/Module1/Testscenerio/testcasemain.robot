@@ -18,18 +18,18 @@ Gmail Login and Update Personal Information
     Switch Back To Main Window
     Sleep    20s
     #TOP MENU FUNCTIONALITY
-#    Search Image on The Top Menu
-#    Mouse Hover Functionality
-#    Bell Image Functionality
-#    Brush Image Functionality
-#    Drop Down Functionality
-#    Profile Functionality
-#    #LEFT MENU FUNCTIONALITY
-#    Left Side Menu
-#    DAILY BASIS TIMESHEET
-#    Time Sheet for a week on Daily basis
+     Search Image on The Top Menu
+     Mouse Hover Functionality
+     Bell Image Functionality
+     Brush Image Functionality
+     Drop Down Functionality
+     Profile Functionality
+     #LEFT MENU FUNCTIONALITY
+     Left Side Menu
+     DAILY BASIS TIMESHEET
+     Time Sheet for a week on Daily basis
 #    Close The Browser
-    #WEEKLY BASIS TIMESHEET
+    WEEKLY BASIS TIMESHEET
     Click On TimeSheet Menu
     Sleep         2s
     Mouse Over TO Task Header
